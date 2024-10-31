@@ -1,4 +1,7 @@
-import { Header } from './components/Header'
+import { Header } from './components/Header/Header'
+
+import styles from './App.module.css'
+
 import './styles.css'
 
 function App() {
@@ -6,7 +9,13 @@ function App() {
   return (
     <>
       <Header />
-      <h1>Ignite Feed</h1>
+
+      <div className={styles.wrapper}>
+        <aside>Sidebar</aside>
+        <main>
+          Posts
+        </main>
+      </div>
     </>
   )
 }
